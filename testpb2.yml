@@ -1,0 +1,8 @@
+---
+    - hosts: linuxservers
+      vars:
+          var1: "Hello World"
+      tasks:
+      - name: String Example
+        debug:
+          msg: "{{ var1 }}"
