@@ -1,0 +1,6 @@
+---
+    - hosts: linuxservers
+      become: true
+      tasks:
+      - name: Create directory
+        file: path=/home/vacvv1/test-tower state=directory mode=775 owner=vacvv1 group=vacvv1
